@@ -5,7 +5,8 @@
 # Correct the errors below that you spotted in task 1.
 
 class CardGame:
-
+  def __init__(self, name):
+    self.name = name
 
   def check_for_ace(self, card):
     if card.value == 1:
@@ -23,4 +24,4 @@ class CardGame:
     total = 0
     for card in cards:
       total += card.value
-    return "You have a total of" + total
+    return "You have a total of " + str(total)
