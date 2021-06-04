@@ -36,10 +36,11 @@ class CardGame:
 
 #total is not instantiated (total variable should be set to something)
 #return should be on same indentation as the for loop
+#Must cast total to string to add it to a string
 def cards_total(self, cards):
-  total
+  total = 0
   for card in cards:
     total += card.value
-    return "You have a total of" + total
+  return "You have a total of" + str(total)
   
 ```
